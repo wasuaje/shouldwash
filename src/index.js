@@ -52,9 +52,12 @@ function WashingDay(props) {
     if (weather.length > 0) {
       for (var weath in weather) {
         sortable.push([weath, weather[weath]]);
+      }
+      sortable.sort(function (a, b) {
+        return a[1] - b[1];
+      });
     }
-    }
-  }, []);
+  }, [data]);
   let [data, setData] = useState([]);
   useEffect(() => {
     axios
@@ -88,6 +91,7 @@ function WashingDay(props) {
   return (
     <div className="App">
       <Grid container spacing={6} alignItems="center">
+        {weather}
         <Grid item xs={6}>
           <List className={classes.root}>
             {data.map((dat) => (
