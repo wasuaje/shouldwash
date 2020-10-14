@@ -1,5 +1,5 @@
 {
-  "name": "react-hooks-usestate",
+  "name": "shouldwash",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -7,11 +7,15 @@
   "dependencies": {
     "@material-ui/core": "4.11.0",
     "@material-ui/icons": "4.9.1",
+    "@material-ui/lab": "4.0.0-alpha.56",
     "axios": "0.20.0",
+    "components": "0.1.0",
     "moment": "2.29.1",
     "react": "next",
     "react-dom": "next",
-    "react-scripts": "2.0.3"
+    "react-geolocated": "3.0.1",
+    "react-scripts": "2.0.3",
+    "use-position": "0.0.7"
   },
   "devDependencies": {},
   "scripts": {
